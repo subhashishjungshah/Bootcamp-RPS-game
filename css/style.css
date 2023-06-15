@@ -8,9 +8,10 @@
 .wrapper{
     height: 100vh;
     width: 100vw;
-    border: 10px solid black;
     background-color: brown;
     display: flex;
+    flex-direction: column;
+    gap: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -48,3 +49,69 @@
     color: #2a45c2;
     font-size: 30px;
 }
+.hands{
+    background-image: url("../assets/triangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    width: 476px;
+    height: 430px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.hands img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    cursor: pointer;
+    margin: 10px;
+    transition:all 0.25s;
+}
+.hands img:hover{
+    transform: translate3d(0px,-8px,0px);
+}
+.result_board{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 100px;
+}
+.human_choice .computer_choice{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.human_choice p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fefefe;
+    text-transform: uppercase;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.result p{
+    font-size: 40px;
+    color: #fefefe;
+    font-weight: 600;
+}
+.result .btn{
+    background-color: #fefefe;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.result .btn:hover{
+    transform: translate3d(0px,-8px,0px);
+}
+
