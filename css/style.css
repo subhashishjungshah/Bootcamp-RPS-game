@@ -72,12 +72,11 @@
     transform: translate3d(0px,-8px,0px);
 }
 .result_board{
- display: flex;
+ display: none;
  align-items: center;
- justify-content: center;
- gap: 100px;
+ justify-content: cflex
 }
-.human_choice .computer_choice{
+.human_choice{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -114,4 +113,16 @@
 .result .btn:hover{
     transform: translate3d(0px,-8px,0px);
 }
-
+.computer_choice{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.computer_choice p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fefefe;
+    text-transform: uppercase;
+}
